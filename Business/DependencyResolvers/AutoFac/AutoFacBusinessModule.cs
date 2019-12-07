@@ -19,6 +19,10 @@ namespace Business.DependencyResolvers.AutoFac
 
             builder.RegisterType<AuthManager>().As<IAuthService>();
             builder.RegisterType<JwtHelper>().As<ITokenHelper>();
+
+
+            builder.RegisterType<CozumManager>().As<ICozumService>();
+            builder.RegisterType<CozumDAL>().As<ICozumDAL>();
         }
     }
 }

@@ -44,7 +44,7 @@ namespace Core.Utilities.Security.Jwt
                 audience:tokenOptions.Audience,
                 notBefore: DateTime.Now,
                 expires:_accessTokenExpiration,
-                claims:SetClaims(user,operationClaims),
+                //claims:SetClaims(user,operationClaims),
                 signingCredentials:signingCredentials
                 );
             return jwt;

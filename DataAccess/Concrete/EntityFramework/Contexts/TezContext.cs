@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Entities.Concrete;
 
 namespace DataAccess.Concrete.Contexts
 {
@@ -15,5 +16,6 @@ namespace DataAccess.Concrete.Contexts
         public DbSet<OperationClaim> OperationClaims { get; set; }
         public DbSet<User> tblKullanici { get; set; }
         public DbSet<UserOperationClaim> UserOperationClaims { get; set; }
+        public DbSet<Cozum> tblCozum { get; set; }
     }
 }

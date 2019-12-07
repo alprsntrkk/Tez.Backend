@@ -14,9 +14,6 @@ namespace Business.DependencyResolvers.AutoFac
     {
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterType<ProductManager>().As<IProductService>();
-            builder.RegisterType<EfProductDAL>().As<IProductDAL>();
-
             builder.RegisterType<UserManager>().As<IUserService>();
             builder.RegisterType<EfUserDAL>().As<IUserDAL>();
 

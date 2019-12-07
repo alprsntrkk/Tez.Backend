@@ -44,7 +44,7 @@ namespace Core.Utilities.Security.Jwt
                 audience:tokenOptions.Audience,
                 notBefore: DateTime.Now,
                 expires:_accessTokenExpiration,
-                //claims:SetClaims(user,operationClaims),
+                claims:SetClaims(user,operationClaims),
                 signingCredentials:signingCredentials
                 );
             return jwt;
@@ -52,9 +52,9 @@ namespace Core.Utilities.Security.Jwt
         private IEnumerable<Claim> SetClaims(User user,List<OperationClaim> operationClaims)
         {
             var claims = new List<Claim>();
-            claims.AddNameIdentifier(user.Id.ToString());
+            claims.AddNameIdentifier(user.ID.ToString());
             claims.AddEmail(user.Email);
-            claims.AddName($"{user.FirstName} {user.LastName}");
+            claims.AddName($"{user.Adi} {user.Soyadi}");
             claims.AddRoles(operationClaims.Select(c=>c.Name).ToArray());
             return claims;
         }

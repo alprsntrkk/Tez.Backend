@@ -1,7 +1,6 @@
 ﻿using Core.DataAccess.EntityFramework;
 using DataAccess.Abstract;
 using DataAccess.Concrete.Contexts;
-using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -10,19 +9,19 @@ using Core.Entities.Concrete;
 
 namespace DataAccess.Concrete.EntityFramework
 {
-    public class EfUserDAL : EfEntityRepositoryBase<User, NorthwindContext>,IUserDAL
+    public class EfUserDAL : EfEntityRepositoryBase<User, TezContext>,IUserDAL
     {
         public List<OperationClaim> GetClaims(User user)
         {
-            using(var context=new NorthwindContext())
+            using(var context=new TezContext())
             {
                 var result = from operationClaim in context.OperationClaims
                              join userOperationClaim in context.UserOperationClaims
                              on operationClaim.Id equals userOperationClaim.OperationClaimId
-                             where userOperationClaim.UserId == user.Id
+                             where userOperationClaim.UserId == user.ID
                              select new OperationClaim { Id = operationClaim.Id, Name = operationClaim.Name };
                 
-                return null;
+                return result.ToList();
             }
         }
     }

@@ -24,3 +24,16 @@ C:\Users\user\Desktop\GitHub\Tez.Backend\DataAccess\obj\Debug\netstandard2.0\Dat
 C:\Users\user\Desktop\GitHub\Tez.Backend\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CopyComplete
 C:\Users\user\Desktop\GitHub\Tez.Backend\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
 C:\Users\user\Desktop\GitHub\Tez.Backend\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\ahhhn\Desktop\github\Tez.Backend\DataAccess\bin\Debug\netstandard2.0\DataAccess.deps.json
+C:\Users\ahhhn\Desktop\github\Tez.Backend\DataAccess\bin\Debug\netstandard2.0\DataAccess.dll
+C:\Users\ahhhn\Desktop\github\Tez.Backend\DataAccess\bin\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\ahhhn\Desktop\github\Tez.Backend\DataAccess\bin\Debug\netstandard2.0\Core.dll
+C:\Users\ahhhn\Desktop\github\Tez.Backend\DataAccess\bin\Debug\netstandard2.0\Entities.dll
+C:\Users\ahhhn\Desktop\github\Tez.Backend\DataAccess\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\ahhhn\Desktop\github\Tez.Backend\DataAccess\bin\Debug\netstandard2.0\Entities.pdb
+C:\Users\ahhhn\Desktop\github\Tez.Backend\DataAccess\obj\Debug\netstandard2.0\DataAccess.csprojAssemblyReference.cache
+C:\Users\ahhhn\Desktop\github\Tez.Backend\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\ahhhn\Desktop\github\Tez.Backend\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfo.cs
+C:\Users\ahhhn\Desktop\github\Tez.Backend\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CopyComplete
+C:\Users\ahhhn\Desktop\github\Tez.Backend\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
+C:\Users\ahhhn\Desktop\github\Tez.Backend\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb

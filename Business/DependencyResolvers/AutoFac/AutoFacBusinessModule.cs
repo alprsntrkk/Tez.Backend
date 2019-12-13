@@ -23,6 +23,26 @@ namespace Business.DependencyResolvers.AutoFac
 
             builder.RegisterType<CozumManager>().As<ICozumService>();
             builder.RegisterType<CozumDAL>().As<ICozumDAL>();
+
+            builder.RegisterType<CozumPuanManager>().As<ICozumPuanService>();
+            builder.RegisterType<CozumPuanDAL>().As<ICozumPuanDAL>();
+
+            builder.RegisterType<EtkinlikManager>().As<IEtkinlikService>();
+            builder.RegisterType<EtkinlikDAL>().As<IEtkinlikDAL>();
+
+            builder.RegisterType<EtkinlikKatilimManager>().As<IEtkinlikKatilimService>();
+            builder.RegisterType<EtkinlikKatilimDAL>().As<IEtkinlikKatilimDAL>();
+
+            builder.RegisterType<HataManager>().As<IHataService>();
+            builder.RegisterType<HataDAL>().As<IHataDAL>();
+
+            builder.RegisterType<IlanManager>().As<IilanService>();
+            builder.RegisterType<IlanDAL>().As<IilanDAL>();
+
+            builder.RegisterType<IlanBasvuruManager>().As<IilanBasvuruService>();
+            builder.RegisterType<IlanBasvuruDAL>().As<IilanBasvuruDAL>();
+
+
         }
     }
 }

@@ -1,24 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\GitHub\\Tez.Backend\\Business\\Business.csproj": {}
+    "C:\\Users\\ahhhn\\Desktop\\github\\Tez.Backend\\Business\\Business.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\GitHub\\Tez.Backend\\Business\\Business.csproj": {
+    "C:\\Users\\ahhhn\\Desktop\\github\\Tez.Backend\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\GitHub\\Tez.Backend\\Business\\Business.csproj",
+        "projectUniqueName": "C:\\Users\\ahhhn\\Desktop\\github\\Tez.Backend\\Business\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "C:\\Users\\user\\Desktop\\GitHub\\Tez.Backend\\Business\\Business.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\GitHub\\Tez.Backend\\Business\\obj\\",
+        "projectPath": "C:\\Users\\ahhhn\\Desktop\\github\\Tez.Backend\\Business\\Business.csproj",
+        "packagesPath": "C:\\Users\\ahhhn\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ahhhn\\Desktop\\github\\Tez.Backend\\Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\ahhhn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -30,11 +32,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\user\\Desktop\\GitHub\\Tez.Backend\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\GitHub\\Tez.Backend\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\ahhhn\\Desktop\\github\\Tez.Backend\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\ahhhn\\Desktop\\github\\Tez.Backend\\DataAccess\\DataAccess.csproj"
               },
-              "C:\\Users\\user\\Desktop\\GitHub\\Tez.Backend\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\GitHub\\Tez.Backend\\Entities\\Entities.csproj"
+              "C:\\Users\\ahhhn\\Desktop\\github\\Tez.Backend\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\ahhhn\\Desktop\\github\\Tez.Backend\\Entities\\Entities.csproj"
               }
             }
           }
@@ -69,25 +71,27 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\user\\Desktop\\GitHub\\Tez.Backend\\Core\\Core.csproj": {
+    "C:\\Users\\ahhhn\\Desktop\\github\\Tez.Backend\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\GitHub\\Tez.Backend\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\ahhhn\\Desktop\\github\\Tez.Backend\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\user\\Desktop\\GitHub\\Tez.Backend\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\GitHub\\Tez.Backend\\Core\\obj\\",
+        "projectPath": "C:\\Users\\ahhhn\\Desktop\\github\\Tez.Backend\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\ahhhn\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ahhhn\\Desktop\\github\\Tez.Backend\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\ahhhn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -143,25 +147,27 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\user\\Desktop\\GitHub\\Tez.Backend\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\ahhhn\\Desktop\\github\\Tez.Backend\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\GitHub\\Tez.Backend\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\ahhhn\\Desktop\\github\\Tez.Backend\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\user\\Desktop\\GitHub\\Tez.Backend\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\GitHub\\Tez.Backend\\DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\ahhhn\\Desktop\\github\\Tez.Backend\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\ahhhn\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ahhhn\\Desktop\\github\\Tez.Backend\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\ahhhn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -173,11 +179,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\user\\Desktop\\GitHub\\Tez.Backend\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\GitHub\\Tez.Backend\\Core\\Core.csproj"
+              "C:\\Users\\ahhhn\\Desktop\\github\\Tez.Backend\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\ahhhn\\Desktop\\github\\Tez.Backend\\Core\\Core.csproj"
               },
-              "C:\\Users\\user\\Desktop\\GitHub\\Tez.Backend\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\GitHub\\Tez.Backend\\Entities\\Entities.csproj"
+              "C:\\Users\\ahhhn\\Desktop\\github\\Tez.Backend\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\ahhhn\\Desktop\\github\\Tez.Backend\\Entities\\Entities.csproj"
               }
             }
           }
@@ -212,25 +218,27 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\user\\Desktop\\GitHub\\Tez.Backend\\Entities\\Entities.csproj": {
+    "C:\\Users\\ahhhn\\Desktop\\github\\Tez.Backend\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\GitHub\\Tez.Backend\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\ahhhn\\Desktop\\github\\Tez.Backend\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\user\\Desktop\\GitHub\\Tez.Backend\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\GitHub\\Tez.Backend\\Entities\\obj\\",
+        "projectPath": "C:\\Users\\ahhhn\\Desktop\\github\\Tez.Backend\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\ahhhn\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ahhhn\\Desktop\\github\\Tez.Backend\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\ahhhn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -242,8 +250,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\user\\Desktop\\GitHub\\Tez.Backend\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\GitHub\\Tez.Backend\\Core\\Core.csproj"
+              "C:\\Users\\ahhhn\\Desktop\\github\\Tez.Backend\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\ahhhn\\Desktop\\github\\Tez.Backend\\Core\\Core.csproj"
               }
             }
           }
@@ -274,7 +282,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

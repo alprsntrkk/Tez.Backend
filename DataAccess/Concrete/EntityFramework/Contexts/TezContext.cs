@@ -17,5 +17,12 @@ namespace DataAccess.Concrete.Contexts
         public DbSet<User> tblKullanici { get; set; }
         public DbSet<UserOperationClaim> UserOperationClaims { get; set; }
         public DbSet<Cozum> tblCozum { get; set; }
+        public DbSet<CozumPuan> tblCozumPuan { get; set; }
+        public DbSet<Etkinlik> tblEtkinlik { get; set; }
+        public DbSet<EtkinlikKatilim> tblEtkinlikKatilim { get; set; }
+        public DbSet<Hata> tblHata { get; set; }
+        public DbSet<Ilan> tblIlan { get; set; }
+        public DbSet<IlanBasvuru> tblIlanBasvuru { get; set; }
+      
     }
 }

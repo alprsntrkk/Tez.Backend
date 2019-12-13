@@ -20,3 +20,14 @@ C:\Users\user\Desktop\GitHub\Tez.Backend\Entities\obj\Debug\netstandard2.0\Entit
 C:\Users\user\Desktop\GitHub\Tez.Backend\Entities\obj\Debug\netstandard2.0\Entities.csproj.CopyComplete
 C:\Users\user\Desktop\GitHub\Tez.Backend\Entities\obj\Debug\netstandard2.0\Entities.dll
 C:\Users\user\Desktop\GitHub\Tez.Backend\Entities\obj\Debug\netstandard2.0\Entities.pdb
+C:\Users\ahhhn\Desktop\github\Tez.Backend\Entities\bin\Debug\netstandard2.0\Entities.deps.json
+C:\Users\ahhhn\Desktop\github\Tez.Backend\Entities\bin\Debug\netstandard2.0\Entities.dll
+C:\Users\ahhhn\Desktop\github\Tez.Backend\Entities\bin\Debug\netstandard2.0\Entities.pdb
+C:\Users\ahhhn\Desktop\github\Tez.Backend\Entities\bin\Debug\netstandard2.0\Core.dll
+C:\Users\ahhhn\Desktop\github\Tez.Backend\Entities\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\ahhhn\Desktop\github\Tez.Backend\Entities\obj\Debug\netstandard2.0\Entities.csprojAssemblyReference.cache
+C:\Users\ahhhn\Desktop\github\Tez.Backend\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfoInputs.cache
+C:\Users\ahhhn\Desktop\github\Tez.Backend\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfo.cs
+C:\Users\ahhhn\Desktop\github\Tez.Backend\Entities\obj\Debug\netstandard2.0\Entities.csproj.CopyComplete
+C:\Users\ahhhn\Desktop\github\Tez.Backend\Entities\obj\Debug\netstandard2.0\Entities.dll
+C:\Users\ahhhn\Desktop\github\Tez.Backend\Entities\obj\Debug\netstandard2.0\Entities.pdb

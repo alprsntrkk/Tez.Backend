@@ -39,5 +39,9 @@ namespace Business.Concrete
             _cozumDAL.Delete(data);
             
         }
+        public List<Cozum> GetListByHataID(int id)
+        {
+            return _cozumDAL.GetList(u => u.hataID ==id);
+        }
     }
 }

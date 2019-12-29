@@ -391,3 +391,6 @@ C:\Users\ahhhn\Desktop\github\Tez.Backend\WebAPI\bin\Debug\netcoreapp3.0\System.
 C:\Users\ahhhn\Desktop\github\Tez.Backend\WebAPI\bin\Debug\netcoreapp3.0\System.Web.Http.dll
 C:\Users\ahhhn\Desktop\github\Tez.Backend\WebAPI\bin\Debug\netcoreapp3.0\Newtonsoft.Json.Bson.dll
 C:\Users\ahhhn\Desktop\github\Tez.Backend\WebAPI\obj\Debug\netcoreapp3.0\WebAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\user\Desktop\GitHub\Tez.Backend\WebAPI\bin\Debug\netcoreapp3.0\System.Net.Http.Formatting.dll
+C:\Users\user\Desktop\GitHub\Tez.Backend\WebAPI\bin\Debug\netcoreapp3.0\System.Web.Http.dll
+C:\Users\user\Desktop\GitHub\Tez.Backend\WebAPI\bin\Debug\netcoreapp3.0\Newtonsoft.Json.Bson.dll

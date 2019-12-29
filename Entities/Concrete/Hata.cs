@@ -10,6 +10,5 @@ namespace Entities.Concrete
         public int ID { get; set; }
         public string Aciklama { get; set; }
         public int kullaniciID { get; set; }
-       
     }
 }

@@ -39,5 +39,9 @@ namespace Business.Concrete
             _ilanBasvuruDAL.Delete(data);
 
         }
+        public List<IlanBasvuru> GetListByOwnerId(int userId)
+        {
+            return _ilanBasvuruDAL.GetList(x=>x.ilansahibiKullanicID==userId);
+        }
     }
 }

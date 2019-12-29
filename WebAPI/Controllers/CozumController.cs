@@ -85,6 +85,12 @@ namespace WebAPI.Controllers
 
             
         }
+        [HttpPost("getbyhataid")]
+        public IActionResult GetListByHataID(int id)
+        {
+            var data=_cozumService.GetListByHataID(id).ToList();
+            return Ok(data);
+        }
 
     }
 }

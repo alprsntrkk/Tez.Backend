@@ -1,0 +1,11 @@
+C:\Users\user\Desktop\GitHub\Tez.Backend\Entities\bin\Release\netstandard2.0\Entities.deps.json
+C:\Users\user\Desktop\GitHub\Tez.Backend\Entities\bin\Release\netstandard2.0\Entities.dll
+C:\Users\user\Desktop\GitHub\Tez.Backend\Entities\bin\Release\netstandard2.0\Entities.pdb
+C:\Users\user\Desktop\GitHub\Tez.Backend\Entities\bin\Release\netstandard2.0\Core.dll
+C:\Users\user\Desktop\GitHub\Tez.Backend\Entities\bin\Release\netstandard2.0\Core.pdb
+C:\Users\user\Desktop\GitHub\Tez.Backend\Entities\obj\Release\netstandard2.0\Entities.csprojAssemblyReference.cache
+C:\Users\user\Desktop\GitHub\Tez.Backend\Entities\obj\Release\netstandard2.0\Entities.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\GitHub\Tez.Backend\Entities\obj\Release\netstandard2.0\Entities.AssemblyInfo.cs
+C:\Users\user\Desktop\GitHub\Tez.Backend\Entities\obj\Release\netstandard2.0\Entities.csproj.CopyComplete
+C:\Users\user\Desktop\GitHub\Tez.Backend\Entities\obj\Release\netstandard2.0\Entities.dll
+C:\Users\user\Desktop\GitHub\Tez.Backend\Entities\obj\Release\netstandard2.0\Entities.pdb

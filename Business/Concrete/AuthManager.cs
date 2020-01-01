@@ -52,7 +52,8 @@ namespace Business.Concrete
                 Soyadi = userForRegisterDto.LastName,
                 PasswordHash = passwordHash,
                 PasswordSalt = passwordSalt,
-                Status=true
+                Status=true,
+                telefonNo=userForRegisterDto.telefonNo
             };
             _userService.Add(user);
             return new SuccessDataResult<User>(user, Messages.UserRegistered);

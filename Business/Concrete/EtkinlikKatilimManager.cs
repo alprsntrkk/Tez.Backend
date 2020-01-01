@@ -39,5 +39,9 @@ namespace Business.Concrete
         {
             _etkinlikKatilimDAL.Update(basvuru);
         }
+        public List<EtkinlikKatilim> GetListByOwnerId(int userId)
+        {
+            return _etkinlikKatilimDAL.GetList(x=>x.etkinlikolusturanKullaniciID==userId);
+        }
     }
 }

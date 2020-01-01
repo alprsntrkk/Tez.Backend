@@ -13,6 +13,7 @@ namespace Business.Abstract
         Cozum GetByid(int id);
         void Update(Cozum cozum);
         void Delete(int id);
+        List<Cozum> GetListByHataID(int id);
 
     }
 }

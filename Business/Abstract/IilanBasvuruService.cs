@@ -12,5 +12,6 @@ namespace Business.Abstract
         IlanBasvuru GetByid(int id);
         void Update(IlanBasvuru basvuru);
         void Delete(int id);
+        List<IlanBasvuru> GetListByOwnerId(int userId);
     }
 }

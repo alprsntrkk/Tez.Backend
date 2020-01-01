@@ -12,5 +12,10 @@ namespace Entities.Concrete
         public int basvuranKullaniciID { get; set; }
         public bool onayDurumu { get; set; }
         public string Aciklama { get; set; }
+        public int ilansahibiKullanicID { get; set; }
+        public string telefonNo { get; set; }
+        public string ilanBasligi { get; set; }
+        public string kullaniciAdi { get; set; }
+        public string kullaniciSoyadi { get; set; }
     }
 }

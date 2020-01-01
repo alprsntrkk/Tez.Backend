@@ -80,5 +80,12 @@ namespace WebAPI.Controllers
 
 
         }
+        [HttpPost("getlistbyownerid")]
+        public IActionResult GetAll(int userId)
+        {
+
+            var data = _etkinlikKatilimService.GetListByOwnerId(userId).ToList();
+            return Ok(data);
+        }
     }
 }

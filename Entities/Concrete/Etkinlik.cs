@@ -14,6 +14,8 @@ namespace Entities.Concrete
         public DateTime Tarih { get; set; }
         public int Kontenjan { get; set; }
         public int olusturanKullaniciID { get; set; }
+        public string kullaniciAdi { get; set; }
+        public string kullaniciSoyadi { get; set; }
 
     }
     

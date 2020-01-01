@@ -39,5 +39,6 @@ namespace Business.Concrete
             _ilanDAL.Delete(data);
 
         }
+        
     }
 }

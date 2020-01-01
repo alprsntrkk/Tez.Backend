@@ -11,5 +11,8 @@ namespace Entities.Concrete
         public string Aciklama { get; set; }
         public int kullaniciID { get; set; }
         public bool aktiflik { get; set; }
+        public string ilanBasligi { get; set; }
+        public string kullaniciAdi { get; set; }
+        public string kullaniciSoyadi { get; set; }
     }
 }

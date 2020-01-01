@@ -10,5 +10,8 @@ namespace Entities.Concrete
         public int ID { get; set; }
         public string Aciklama { get; set; }
         public int kullaniciID { get; set; }
+        public string kullaniciAdi { get; set; }
+        public string kullaniciSoyadi { get; set; }
+        public string hataBasligi { get; set; }
     }
 }

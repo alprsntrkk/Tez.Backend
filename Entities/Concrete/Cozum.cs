@@ -12,6 +12,8 @@ namespace Entities.Concrete
         public int hataID { get; set; }
         public int kullaniciID { get; set; }
         public Double Puani { get; set; }
+        public string kullaniciAdi { get; set; }
+        public string kullaniciSoyadi { get; set; }
 
     }
 }

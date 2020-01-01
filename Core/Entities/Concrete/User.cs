@@ -16,5 +16,6 @@ namespace Core.Entities.Concrete
         public int Yasi { get; set; }
         public string Biyografi { get; set; }
         public bool Status { get; set; }
+        public string telefonNo { get; set; }
     }
 }

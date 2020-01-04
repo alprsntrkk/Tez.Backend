@@ -12,7 +12,6 @@ namespace WebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize()]
     public class HataController : ControllerBase
     {
         private IHataService _hataService;
@@ -38,6 +37,7 @@ namespace WebAPI.Controllers
         ///</summary>
         [HttpGet]
         [Route("{id}")]
+        [Authorize()]
         public IActionResult GetByid(int id)
         {
 
@@ -50,6 +50,7 @@ namespace WebAPI.Controllers
         ///Hata tipinde gelen nesneyi ekleme işlemi yapar
         ///</summary>
         [HttpPost("")]
+        [Authorize()]
         public IActionResult AddCozum(Hata hata)
         {
             _hataService.Add(hata);
@@ -61,6 +62,7 @@ namespace WebAPI.Controllers
         ///Hata tipinde gelen nesneyi günceller
         ///</summary>
         [HttpPost("update")]
+        [Authorize()]
         public IActionResult Update(Hata hata)
         {
             _hataService.Update(hata);
@@ -73,6 +75,7 @@ namespace WebAPI.Controllers
         ///</summary>
         [HttpGet]
         [Route("delete/{id}")]
+        [Authorize()]
         public IActionResult Delete(int id)
         {
 

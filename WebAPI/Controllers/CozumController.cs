@@ -41,6 +41,7 @@ namespace WebAPI.Controllers
         ///</summary>
         [HttpGet]
         [Route("{id}")]
+        [Authorize()]
         public IActionResult GetByid(int id)
         {
 
@@ -53,6 +54,7 @@ namespace WebAPI.Controllers
         ///Çözüm tipinde gelen nesneyi ekleme işlemi yapar
         ///</summary>
         [HttpPost("")]
+        [Authorize()]
         public IActionResult AddCozum(Cozum cozum)
         {
             _cozumService.Add(cozum);
@@ -64,6 +66,7 @@ namespace WebAPI.Controllers
         ///Çözüm tipinde gelen nesneyi günceller
         ///</summary>
         [HttpPost("update")]
+        [Authorize()]
         public IActionResult Update(Cozum cozum)
         {
             _cozumService.Update(cozum);
@@ -76,6 +79,7 @@ namespace WebAPI.Controllers
         ///</summary>
         [HttpGet]
         [Route("delete/{id}")]
+        [Authorize()]
         public IActionResult Delete(int id)
         {
             
@@ -86,6 +90,7 @@ namespace WebAPI.Controllers
             
         }
         [HttpPost("getbyhataid")]
+        [Authorize()]
         public IActionResult GetListByHataID(int id)
         {
             var data=_cozumService.GetListByHataID(id).ToList();

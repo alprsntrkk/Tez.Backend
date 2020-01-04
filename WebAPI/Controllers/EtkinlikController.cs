@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Business.Abstract;
 using Entities.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -36,6 +37,7 @@ namespace WebAPI.Controllers
         ///</summary>
         [HttpGet]
         [Route("{id}")]
+        [Authorize()]
         public IActionResult GetByid(int id)
         {
 
@@ -48,6 +50,7 @@ namespace WebAPI.Controllers
         ///Etkinlik tipinde gelen nesneyi ekleme işlemi yapar
         ///</summary>
         [HttpPost("")]
+        [Authorize()]
         public IActionResult AddEtkinlik(Etkinlik etkinlik)
         {
             _etkinlikService.Add(etkinlik);
@@ -59,6 +62,7 @@ namespace WebAPI.Controllers
         ///Etnlik tipinde gelen nesneyi günceller
         ///</summary>
         [HttpPost("update")]
+        [Authorize()]
         public IActionResult Update(Etkinlik etkinlik)
         {
             _etkinlikService.Update(etkinlik);
@@ -71,6 +75,7 @@ namespace WebAPI.Controllers
         ///</summary>
         [HttpGet]
         [Route("delete/{id}")]
+        [Authorize()]
         public IActionResult Delete(int id)
         {
 

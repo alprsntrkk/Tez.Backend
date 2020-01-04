@@ -41,7 +41,7 @@ namespace Business.Concrete
         }
         public List<IlanBasvuru> GetListByOwnerId(int userId)
         {
-            return _ilanBasvuruDAL.GetList(x=>x.ilansahibiKullanicID==userId);
+            return _ilanBasvuruDAL.GetList(x=>x.ilansahibiKullaniciID==userId);
         }
     }
 }

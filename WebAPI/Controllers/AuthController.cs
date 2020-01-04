@@ -32,7 +32,10 @@ namespace WebAPI.Controllers
             var result = _authService.CreateAccessToken(userToLogin.Data);
             if (result.Success)
             {
-                return Ok(result.Data);
+                UserInfo userInfo = new UserInfo();
+                userInfo.accesToken = result.Data;
+                userInfo.userInfo = userToLogin.Data;
+                return Ok(userInfo);
             }
             return BadRequest(result.Message);
         }
@@ -48,7 +51,10 @@ namespace WebAPI.Controllers
             var result = _authService.CreateAccessToken(registerResult.Data);
             if (result.Success)
             {
-                return Ok(result.Data);
+                UserInfo userInfo = new UserInfo();
+                userInfo.accesToken = result.Data;
+                userInfo.userInfo = registerResult.Data;
+                return Ok(userInfo);
             }
             return BadRequest(result.Message);
         }

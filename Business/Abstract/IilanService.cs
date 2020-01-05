@@ -12,5 +12,6 @@ namespace Business.Abstract
         Ilan GetByid(int id);
         void Update(Ilan ilan);
         void Delete(int id);
+        List<Ilan> GetNotYet(int userId);
     }
 }

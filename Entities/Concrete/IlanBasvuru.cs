@@ -16,5 +16,6 @@ namespace Entities.Concrete
         public string telefonNo { get; set; }
         public string kullaniciAdi { get; set; }
         public string kullaniciSoyadi { get; set; }
+        public string ilanBasligi { get; set; }
     }
 }

@@ -64,26 +64,26 @@ namespace WebAPI.Controllers
         public IActionResult Update(EtkinlikKatilim etkinlikkatilim)
         {
             _etkinlikKatilimService.Update(etkinlikkatilim);
-
+                
             return Ok(etkinlikkatilim);
         }
 
         ///<summary>
         ///İd'ye göre gelen etkinliği siler
         ///</summary>
-        [HttpGet]
+        [HttpPost]
         [Route("delete/{id}")]
         public IActionResult Delete(int id)
         {
 
-            _etkinlikKatilimService.Delete(id);
+            var data=_etkinlikKatilimService.Delete(id);
 
-            return Ok(id);
+            return Ok(data);
 
 
         }
-        [HttpPost("getlistbyownerid")]
-        public IActionResult GetAll(int userId)
+        [HttpPost("getlistbyownerid/{userId}")]
+        public IActionResult GetListByOwnerId(int userId)
         {
 
             var data = _etkinlikKatilimService.GetListByOwnerId(userId).ToList();

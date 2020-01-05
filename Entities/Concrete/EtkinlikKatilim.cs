@@ -14,7 +14,7 @@ namespace Entities.Concrete
         public int etkinlikolusturanKullaniciID { get; set; }
         public string kullaniciAdi { get; set; }
         public string kullaniciSoyadi { get; set; }
-
+        public string etkinlikBasligi { get; set; }
 
     }
 }

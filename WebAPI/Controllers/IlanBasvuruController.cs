@@ -71,18 +71,18 @@ namespace WebAPI.Controllers
         ///<summary>
         ///İd'ye göre gelen ilan basvurusnu siler
         ///</summary>
-        [HttpGet]
+        [HttpPost]
         [Route("delete/{id}")]
         public IActionResult Delete(int id)
         {
 
-            _ilanBasvuruService.Delete(id);
+            var data=_ilanBasvuruService.Delete(id);
 
-            return Ok(id);
+            return Ok(data);
 
 
         }
-        [HttpPost("getlistbyownerid")]
+        [HttpPost("getlistbyownerid/{userId}")]
         public IActionResult GetAll(int userId)
         {
 

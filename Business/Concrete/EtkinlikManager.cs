@@ -3,6 +3,7 @@ using DataAccess.Abstract;
 using Entities.Concrete;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Business.Concrete
@@ -10,9 +11,11 @@ namespace Business.Concrete
    public  class EtkinlikManager : IEtkinlikService
     {
         IEtkinlikDAL _etkinlikDAL;
-        public EtkinlikManager(IEtkinlikDAL etkinlikDal)
+        IEtkinlikKatilimDAL _etkinlikKatilimDAL;
+        public EtkinlikManager(IEtkinlikDAL etkinlikDal, IEtkinlikKatilimDAL etkinlikKatilimDAL)
         {
             _etkinlikDAL = etkinlikDal;
+            _etkinlikKatilimDAL = etkinlikKatilimDAL;
         }
         public void Add(Etkinlik etkinlik)
         {
@@ -38,6 +41,11 @@ namespace Business.Concrete
         public void Update(Etkinlik etkinlik)
         {
             _etkinlikDAL.Update(etkinlik);
+        }
+        public List<Etkinlik> GetNotYet(int userId)
+        {
+            var basvurulanEtkinlikler = _etkinlikKatilimDAL.GetList(x => x.katilanKullaniciID == userId).Select(x => x.etkinlikID);
+            return _etkinlikDAL.GetList(x => !basvurulanEtkinlikler.Contains(x.ID));
         }
     }
 }

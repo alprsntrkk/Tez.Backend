@@ -19,10 +19,11 @@ namespace Business.Concrete
             _etkinlikKatilimDAL.Add(basvuru);
         }
 
-        public void Delete(int id)
+        public EtkinlikKatilim Delete(int id)
         {
             var data = _etkinlikKatilimDAL.Get(u => u.ID == id);
             _etkinlikKatilimDAL.Delete(data);
+            return data;
         }
 
         public EtkinlikKatilim GetByid(int id)
@@ -41,7 +42,7 @@ namespace Business.Concrete
         }
         public List<EtkinlikKatilim> GetListByOwnerId(int userId)
         {
-            return _etkinlikKatilimDAL.GetList(x=>x.etkinlikolusturanKullaniciID==userId);
+            return _etkinlikKatilimDAL.GetList(x=>x.etkinlikolusturanKullaniciID==userId && x.onayDurumu == false);
         }
     }
 }

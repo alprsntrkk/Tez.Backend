@@ -3,6 +3,7 @@ using DataAccess.Abstract;
 using Entities.Concrete;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Business.Concrete
@@ -10,9 +11,11 @@ namespace Business.Concrete
   public  class IlanManager : IilanService
     {
         IilanDAL _ilanDAL;
-        public IlanManager(IilanDAL ilanDAL)
+        IilanBasvuruDAL _ıilanBasvuruDAL;
+        public IlanManager(IilanDAL ilanDAL, IilanBasvuruDAL ıilanBasvuruDAL)
         {
             _ilanDAL = ilanDAL;
+            _ıilanBasvuruDAL = ıilanBasvuruDAL;
         }
 
         public List<Ilan> GetList()
@@ -39,6 +42,11 @@ namespace Business.Concrete
             _ilanDAL.Delete(data);
 
         }
-        
+        public List<Ilan> GetNotYet(int userId)
+        {
+            var basvurulanIlanlar=_ıilanBasvuruDAL.GetList(x => x.basvuranKullaniciID == userId).Select(x=>x.ilanID);
+            return _ilanDAL.GetList(x=>!basvurulanIlanlar.Contains(x.ID));
+        }
+
     }
 }

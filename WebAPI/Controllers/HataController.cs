@@ -73,7 +73,7 @@ namespace WebAPI.Controllers
         ///<summary>
         ///İd'ye göre gelen hatayı siler
         ///</summary>
-        [HttpGet]
+        [HttpPost]
         [Route("delete/{id}")]
         [Authorize()]
         public IActionResult Delete(int id)

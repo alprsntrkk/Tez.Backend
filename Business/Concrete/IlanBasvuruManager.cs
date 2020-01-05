@@ -33,15 +33,16 @@ namespace Business.Concrete
             _ilanBasvuruDAL.Update(ilan);
         }
 
-        public void Delete(int id)
+        public IlanBasvuru Delete(int id)
         {
             var data = _ilanBasvuruDAL.Get(u => u.ID == id);
             _ilanBasvuruDAL.Delete(data);
+            return data;
 
         }
         public List<IlanBasvuru> GetListByOwnerId(int userId)
         {
-            return _ilanBasvuruDAL.GetList(x=>x.ilansahibiKullaniciID==userId);
+            return _ilanBasvuruDAL.GetList(x=>x.ilansahibiKullaniciID==userId && x.onayDurumu==false);
         }
     }
 }

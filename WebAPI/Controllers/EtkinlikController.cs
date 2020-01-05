@@ -73,7 +73,7 @@ namespace WebAPI.Controllers
         ///<summary>
         ///İd'ye göre gelen etkinliği siler
         ///</summary>
-        [HttpGet]
+        [HttpPost]
         [Route("delete/{id}")]
         [Authorize()]
         public IActionResult Delete(int id)
@@ -84,6 +84,14 @@ namespace WebAPI.Controllers
             return Ok(id);
 
 
+        }
+
+        [HttpPost("getnotyet/{userId}")]
+        public IActionResult GetNotYet(int userId)
+        {
+
+            var data = _etkinlikService.GetNotYet(userId).ToList();
+            return Ok(data);
         }
     }
 }

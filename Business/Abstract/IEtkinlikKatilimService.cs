@@ -11,7 +11,7 @@ namespace Business.Abstract
         void Add(EtkinlikKatilim basvuru);
         EtkinlikKatilim GetByid(int id);
         void Update(EtkinlikKatilim basvuru);
-        void Delete(int id);
+        EtkinlikKatilim Delete(int id);
         List<EtkinlikKatilim> GetListByOwnerId(int userId);
     }
 }

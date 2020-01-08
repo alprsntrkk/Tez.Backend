@@ -3,6 +3,7 @@ using DataAccess.Abstract;
 using Entities.Concrete;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Business.Concrete
@@ -17,7 +18,7 @@ namespace Business.Concrete
 
         public List<Hata> GetList()
         {
-            return _hataDAL.GetList();
+            return _hataDAL.GetList().OrderByDescending(x=>x.ID).ToList();
         }
         public Hata GetByid(int id)
         {

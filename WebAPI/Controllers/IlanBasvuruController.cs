@@ -89,5 +89,12 @@ namespace WebAPI.Controllers
             var data = _ilanBasvuruService.GetListByOwnerId(userId).ToList();
             return Ok(data);
         }
+        [HttpPost("getunapproved/{userId}")]
+        public IActionResult GetUnapproved(int etkinlikId)
+        {
+
+            var data = _ilanBasvuruService.GetUnapprovedByIlanId(etkinlikId).ToList();
+            return Ok(data);
+        }
     }
 }

@@ -20,7 +20,7 @@ namespace Business.Concrete
 
         public List<Ilan> GetList()
         {
-            return _ilanDAL.GetList();
+            return _ilanDAL.GetList().OrderByDescending(x => x.ID).ToList();
         }
         public Ilan GetByid(int id)
         {
@@ -36,16 +36,23 @@ namespace Business.Concrete
             _ilanDAL.Update(ilan);
         }
 
-        public void Delete(int id)
+        public Ilan Delete(int id)
         {
             var data = _ilanDAL.Get(u => u.ID == id);
             _ilanDAL.Delete(data);
+            return data;
 
         }
         public List<Ilan> GetNotYet(int userId)
         {
             var basvurulanIlanlar=_ıilanBasvuruDAL.GetList(x => x.basvuranKullaniciID == userId).Select(x=>x.ilanID);
-            return _ilanDAL.GetList(x=>!basvurulanIlanlar.Contains(x.ID));
+            return _ilanDAL.GetList(x=>!basvurulanIlanlar.Contains(x.ID)).OrderByDescending(x => x.ID).ToList();
+        }
+
+        public List<Ilan> GetByUserId(int userId)
+        {
+            
+            return _ilanDAL.GetList(x => x.kullaniciID==userId);
         }
 
     }

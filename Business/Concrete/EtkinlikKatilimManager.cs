@@ -44,5 +44,10 @@ namespace Business.Concrete
         {
             return _etkinlikKatilimDAL.GetList(x=>x.etkinlikolusturanKullaniciID==userId && x.onayDurumu == false);
         }
+        
+        public List<EtkinlikKatilim> GetUnapprovedByEventId(int etkinlikId)
+        {
+            return _etkinlikKatilimDAL.GetList(x => x.etkinlikID == etkinlikId && x.onayDurumu == false);
+        }
     }
 }

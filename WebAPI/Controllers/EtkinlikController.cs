@@ -79,9 +79,9 @@ namespace WebAPI.Controllers
         public IActionResult Delete(int id)
         {
 
-            _etkinlikService.Delete(id);
+            var data=_etkinlikService.Delete(id);
 
-            return Ok(id);
+            return Ok(data);
 
 
         }
@@ -91,6 +91,12 @@ namespace WebAPI.Controllers
         {
 
             var data = _etkinlikService.GetNotYet(userId).ToList();
+            return Ok(data);
+        }
+        [HttpPost("getbyuserid/{userId}")]
+        public IActionResult GetByUserId(int userId)
+        {
+            var data = _etkinlikService.GetByUserId(userId).ToList();
             return Ok(data);
         }
     }

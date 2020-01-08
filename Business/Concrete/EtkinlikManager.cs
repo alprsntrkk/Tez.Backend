@@ -22,10 +22,11 @@ namespace Business.Concrete
             _etkinlikDAL.Add(etkinlik);
         }
 
-        public void Delete(int id)
+        public Etkinlik Delete(int id)
         {
             var data = _etkinlikDAL.Get(u => u.ID == id);
             _etkinlikDAL.Delete(data);
+            return data;
         }
 
         public Etkinlik GetByid(int id)
@@ -35,7 +36,7 @@ namespace Business.Concrete
 
         public List<Etkinlik> GetList()
         {
-            return _etkinlikDAL.GetList();
+            return _etkinlikDAL.GetList().OrderByDescending(x => x.ID).ToList();
         }
 
         public void Update(Etkinlik etkinlik)
@@ -45,7 +46,12 @@ namespace Business.Concrete
         public List<Etkinlik> GetNotYet(int userId)
         {
             var basvurulanEtkinlikler = _etkinlikKatilimDAL.GetList(x => x.katilanKullaniciID == userId).Select(x => x.etkinlikID);
-            return _etkinlikDAL.GetList(x => !basvurulanEtkinlikler.Contains(x.ID));
+            return _etkinlikDAL.GetList(x => !basvurulanEtkinlikler.Contains(x.ID)).OrderByDescending(x => x.ID).ToList();
+        }
+        public List<Etkinlik> GetByUserId(int userId)
+        {
+
+            return _etkinlikDAL.GetList(x => x.olusturanKullaniciID == userId);
         }
     }
 }

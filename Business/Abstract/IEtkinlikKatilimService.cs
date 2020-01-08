@@ -13,5 +13,6 @@ namespace Business.Abstract
         void Update(EtkinlikKatilim basvuru);
         EtkinlikKatilim Delete(int id);
         List<EtkinlikKatilim> GetListByOwnerId(int userId);
+        List<EtkinlikKatilim> GetUnapprovedByEventId(int userId);
     }
 }

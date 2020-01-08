@@ -89,5 +89,12 @@ namespace WebAPI.Controllers
             var data = _etkinlikKatilimService.GetListByOwnerId(userId).ToList();
             return Ok(data);
         }
+        [HttpPost("getunapproved/{etkinlikId}")]
+        public IActionResult GetUnapproved(int etkinlikId)
+        {
+
+            var data = _etkinlikKatilimService.GetUnapprovedByEventId(etkinlikId).ToList();
+            return Ok(data);
+        }
     }
 }

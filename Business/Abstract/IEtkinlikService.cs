@@ -11,7 +11,8 @@ namespace Business.Abstract
         void Add(Etkinlik etkinlik);
         Etkinlik GetByid(int id);
         void Update(Etkinlik etkinlik);
-        void Delete(int id);
+        Etkinlik Delete(int id);
         List<Etkinlik> GetNotYet(int userId);
+        List<Etkinlik> GetByUserId(int userId);
     }
 }

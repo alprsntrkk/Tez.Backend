@@ -47,6 +47,10 @@ namespace WebAPI.Controllers
             {
                 return BadRequest(userExists.Message);
             }
+            if (userForRegisterDto.Email == "" || userForRegisterDto.Password == "" || userForRegisterDto.FirstName=="" || userForRegisterDto.LastName == "" || userForRegisterDto.telefonNo == "")
+            {
+                return BadRequest("Alanlar boş geçilemez.");
+            }
             var registerResult = _authService.Register(userForRegisterDto, userForRegisterDto.Password);
             var result = _authService.CreateAccessToken(registerResult.Data);
             if (result.Success)

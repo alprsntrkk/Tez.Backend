@@ -44,5 +44,9 @@ namespace Business.Concrete
         {
             return _ilanBasvuruDAL.GetList(x=>x.ilansahibiKullaniciID==userId && x.onayDurumu==false);
         }
+        public List<IlanBasvuru> GetUnapprovedByIlanId(int ilanId)
+        {
+            return _ilanBasvuruDAL.GetList(x => x.ilanID == ilanId && x.onayDurumu == false);
+        }
     }
 }
